@@ -45,7 +45,7 @@ const array = [1,5,15,3,38,12]
 
 // 4 ---------- ----
 
-function checkOddEven(number) {
+function checkOddOrEven(number) {
     if (number % 2 === 0) {
         return "This number is even.";
     } else {
@@ -53,8 +53,8 @@ function checkOddEven(number) {
     }
 }
 
-var result = checkOddEven(4);
-console.log(result);
+let answerOddOrEven = checkOddEven(4);
+console.log(answerOddOrEven);
 
 
 // 5  ---------- -----
@@ -74,8 +74,11 @@ console.log(reversedArray)
 
 // 6 ---------- ------
 
-const AgeStatus = (age) => (age > 18) ? 'სრულწლოვანი' : 'არასრულწლოვანი';
 
-const userAge = 25;
-const result = AgeStatus(userAge);
-console.log(result);
+
+let AgeStatus = (age) => (age > 18) ? 'სრულწლოვანი' : 'არასრულწლოვანი';
+
+
+let userAge = 25;
+let result = AgeStatus(userAge);
+console.log(result)
